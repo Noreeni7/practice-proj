@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+ /*========== NAV BAAR STYLE ==========*/
 nav {
   background-color: #3d5a80;
   height: 98px;
@@ -49,181 +51,176 @@ nav ul li a {
 }
 
 
-
+ /*=========== HERO SECTION STYLE ========*/
 .hero {
-  position: relative;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: calc(100vh - 98px);
   background-color: #3d5a80;
 }
 
-.hero-side{
-  width: 20px;
-  background-color: #ee6c4d;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-}
-
 .hero p {
   color: white;
-  margin-left: 160px;
 }
 
-.line {
-  padding-top: 123px;
+.hero-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 40px;
 }
 
-.line1 {
+.hero-title2 {
   color: brown;
 }
 
-.intro {
+.hero-description {
   font-weight: 400;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
 }
 
-.hero-subsection-2{
+.hero-subsection{
   position: relative;
 }
 
-.hero-subsection-2 p{
-  text-align: center;
+.hero-image {
+  bottom: 0;
+  width: 100%;
+  max-width: 315px;
+  height: auto;
+  transform: translateX(-10%);
+  z-index:9999;
 }
 
-.img {
-  /* width: 315px;
-  height: 474px; */
-  left: 50%;
-  /* transform: translateX(-50%); */
-  /* top: 169px; */
-  z-index: 999;
-}
-
-.circle {
+/* .circle {
   position: absolute;
-  top: 146px;
-  left: 841px;
-  width: 273px;
-  height: 273px;
-  background-color: #2932415e;
+  background-color: #2932415E;
   border-radius: 50%;
-}
+  top: -2vw;
+  left: -2vw;
+  width: 18vw;
+  height: 18vw;
+} */
 
-.rect {
+
+/* ========== ABOUT SECTION STYLE ==========*/
+.about-section {
   background-color: #293241;
-  height: 745px;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.img1 {
-  position: absolute;
-  width: 371px;
-  height: 308px;
-  margin-left: 192px;
-  top: 842px;
+.about-image {
+  /* height: 308px; */
+   /* width: 371px; */
+
 }
 
-.rect article {
-  position: absolute;
-  top: 820px;
-  left: 706px;
+.about-section article {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-decoration: none;
 }
 
-.about {
+.about-text {
   font-size: 28px;
-  padding-bottom: 0.5rem;
   border-bottom: 3px solid #ee6c4d;
 }
 
-.rect p {
+.about-section p {
   font-size: 18px;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
-.companies {
-  position: absolute;
-  top: 1276px;
-  left: 492px;
+
+/* ======= COMPANIES STYLE ======== */
+.companies{
+  background-color: #132038;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 1.5rem
+}
+.companies p{
   color: #ffffff;
   font-size: 28px;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
-  border-bottom: 3px solid #ee6c4d;
-  padding-bottom: 9px;
+  /* border-bottom: 3px solid #ee6c4d; */
+  /* padding-bottom: 9px; */
 }
 
-.img2 {
-  position: absolute;
-  top: 1376px;
-  left: 240px;
-  width: 881px;
-  height: 47px;
+.companies-logos {
+  /* width: 881px;
+  height: 47px;  */
 }
 
-.works {
-  position: relative;
-  height: 700px;
+
+/*=========== RECENT WORK STYLING ========*/
+.recet-work {
   background-color: #293241;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding-bottom: 90px;
-  padding-left: 160px;
-  padding-right: 159px;
+  padding: 40px 125px;
+  gap: 10rem;
 }
 
-.works p {
-  position: absolute;
-  left: 159px;
+.recet-work p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 28px;
   color: #ffffff;
-  border-bottom: 3px solid #ee6c4d;
-  padding-bottom: 1rem;
+  /* border-bottom: 3px solid #ee6c4d; */
+  /* padding-bottom: 1rem; */
+}
+
+.services-offered{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
 }
 
 figure {
-  margin: 0;
+  /* margin: 0; */
 }
 
 figcaption {
   font-size: 18px;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
-  margin-bottom: 0.5rem;
-  margin-top: 5rem;
+  /* margin-bottom: 0.5rem;
+  margin-top: 5rem; */
   color: #ffffff;
 }
 
 .studio,
 .company {
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 
-.works a {
-  position: absolute;
-  left: 590px;
+.recet-work a {
+display: block;
+text-align: center;
+margin: 2rem auto;
   color: #ee6c4d;
   border: 1px solid #ee6c4d;
   border-radius: 5px;
-  bottom: 20px;
+  /* bottom: 20px; */
   text-decoration: none;
-  padding: 12px 18px 12px 18px;
-  width: 187px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  opacity: 1;
+  padding: 12px 8px 12px 8px;
+  /* width: 187px;
+  height: 48px; */
 }
+
+
+
+
+
+
+
 
 .reviews {
   height: 457px;
