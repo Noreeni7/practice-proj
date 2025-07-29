@@ -331,12 +331,12 @@ button {
 }
 
 .footer {
-  background-color: #2f3746;
-  height: 60px;
+  background-color: #141920;
+  /* height: 60px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0.8rem 2rem;
   font-family: Open Sans;
 }
 
@@ -346,7 +346,7 @@ button {
   color: #ffffff;
 }
 
-.page {
-  width: 286px;
-  height: 32px;
+.social-page {
+  /* width: 286px;
+  height: 32px; */
 }
