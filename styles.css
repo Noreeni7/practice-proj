@@ -113,8 +113,7 @@ nav ul li a {
 }
 
 .about-image {
-  /* height: 308px; */
-   /* width: 371px; */
+
 
 }
 
@@ -132,7 +131,7 @@ nav ul li a {
 
 .about-section p {
   font-size: 18px;
-  /* margin-bottom: 1rem; */
+
 }
 
 
@@ -146,18 +145,16 @@ nav ul li a {
   padding: 20px 10px;
   gap: 1.5rem
 }
+
 .companies p{
   color: #ffffff;
   font-size: 28px;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
-  /* border-bottom: 3px solid #ee6c4d; */
-  /* padding-bottom: 9px; */
 }
 
 .companies-logos {
-  /* width: 881px;
-  height: 47px;  */
+
 }
 
 
@@ -173,8 +170,6 @@ nav ul li a {
   font-weight: 400;
   font-size: 28px;
   color: #ffffff;
-  /* border-bottom: 3px solid #ee6c4d; */
-  /* padding-bottom: 1rem; */
 }
 
 .services-offered{
@@ -184,21 +179,19 @@ nav ul li a {
 }
 
 figure {
-  /* margin: 0; */
+
 }
 
 figcaption {
   font-size: 18px;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
-  /* margin-bottom: 0.5rem;
-  margin-top: 5rem; */
   color: #ffffff;
 }
 
 .studio,
 .company {
-  /* margin-top: 80px; */
+
 }
 
 .recet-work a {
@@ -208,60 +201,59 @@ margin: 2rem auto;
   color: #ee6c4d;
   border: 1px solid #ee6c4d;
   border-radius: 5px;
-  /* bottom: 20px; */
   text-decoration: none;
   padding: 12px 8px 12px 8px;
-  /* width: 187px;
-  height: 48px; */
+
 }
 
 
-
-
-
-
-
-
+/* ======CLIENT REVIEWS STYLE ======= */
 .reviews {
-  height: 457px;
   background-color: #2f3746;
-  /* left: 159px; */
-  padding-top: 150px;
-  padding-left: 159px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 1.5rem
 }
 
 .reviews h1 {
-  position: absolute;
-  left: 500px;
-  top: 2200px;
   color: #ffffff;
   font-family: Open Sans;
   font-weight: 400;
   font-style: Regular;
   font-size: 28px;
   border-bottom: 3px solid #ee6c4d;
-  padding-bottom: 0.6rem;
+}
+
+.client-comment{
+  display: flex;
+  padding: 2% 12%;
+  gap: 3rem;
 }
 
 .Charles,
 .marg {
   background-color: #00000073;
-  width: 475px;
-  height: 180px;
   border-radius: 3px;
   opacity: 1;
-  margin: 15px;
+  padding: 1vw;
 }
 
-.ChD {
-  width: 40;
-  height: 40;
+.client{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.client-image {
   opacity: 1;
-  margin-left: 15px;
-  margin-top: 18px;
   background-color: #c4c4c4;
   border-radius: 50%;
+}
+.client-info{
+  display: block;
 }
 
 .Charles p,
@@ -271,47 +263,38 @@ margin: 2rem auto;
   font-style: Regular;
   font-size: 16px;
   color: #ffffff;
-  margin-top: 5px;
-  margin-left: 15px;
 }
 
-.contact {
+
+/* ========== CONTACT FORM STYLE =========  */
+.contact-us {
   background-color: #3d5a80;
-  height: 483px;
-  padding: 20px 159px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2vw 9vw;
 }
 
-.contact p {
+.contact-us p {
   font-family: Open Sans;
   font-weight: 400;
   font-size: 28px;
-  width: 345px;
-  padding-bottom: 15px;
-  border-bottom: 3px solid #ee6c4d;
   color: #ffffff;
 }
 
-.contact input {
+.contact-us input {
   background-color: #26384f;
-  width: 490px;
-  height: 48px;
   border-radius: 3px;
-  margin-right: 5px;
-  margin-top: 30px;
-  flex: 1;
+  /* flex: 1; */
   border: none;
-  padding: 15px 18px;
 }
 
 textarea {
-  width: 988px;
-  height: 180px;
   border-radius: 3px;
   background-color: #26384f;
   resize: vertical;
   box-sizing: border-box;
   border: none;
-  padding: 15px 18px;
   font-family: Open Sans;
   font-weight: 400;
   font-size: 16px;
@@ -319,8 +302,6 @@ textarea {
 
 button {
   background-color: #ee6c4d;
-  width: 150px;
-  height: 48px;
   border-radius: 5px;
   text-align: center;
   font-family: Open Sans;
@@ -330,9 +311,10 @@ button {
   border: none;
 }
 
+
+/* ========= FOOTER STYLE ======== */
 .footer {
   background-color: #141920;
-  /* height: 60px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -347,6 +329,5 @@ button {
 }
 
 .social-page {
-  /* width: 286px;
-  height: 32px; */
+
 }
