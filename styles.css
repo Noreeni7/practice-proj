@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-
- /*========== NAV BAAR STYLE ==========*/
+/*========== NAV BAAR STYLE ==========*/
 nav {
   background-color: #3d5a80;
   height: 98px;
@@ -50,8 +49,7 @@ nav ul li a {
   align-items: center;
 }
 
-
- /*=========== HERO SECTION STYLE ========*/
+/*=========== HERO SECTION STYLE ========*/
 .hero {
   display: flex;
   justify-content: space-around;
@@ -80,7 +78,7 @@ nav ul li a {
   font-family: "Open Sans", sans-serif;
 }
 
-.hero-subsection{
+.hero-subsection {
   position: relative;
 }
 
@@ -90,7 +88,9 @@ nav ul li a {
   max-width: 315px;
   height: auto;
   transform: translateX(-10%);
-  z-index:9999;
+  z-index: 9999;
+  width: 100%;
+  height: auto;
 }
 
 /* .circle {
@@ -103,7 +103,6 @@ nav ul li a {
   height: 18vw;
 } */
 
-
 /* ========== ABOUT SECTION STYLE ==========*/
 .about-section {
   background-color: #293241;
@@ -113,8 +112,8 @@ nav ul li a {
 }
 
 .about-image {
-
-
+  /* width: 20%; */
+  height: auto;
 }
 
 .about-section article {
@@ -131,22 +130,20 @@ nav ul li a {
 
 .about-section p {
   font-size: 18px;
-
 }
 
-
 /* ======= COMPANIES STYLE ======== */
-.companies{
+.companies {
   background-color: #132038;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 10px;
-  gap: 1.5rem
+  gap: 1.5rem;
 }
 
-.companies p{
+.companies p {
   color: #ffffff;
   font-size: 28px;
   font-weight: 400;
@@ -154,9 +151,9 @@ nav ul li a {
 }
 
 .companies-logos {
-
+  /* width: 100%; */
+  height: auto;
 }
-
 
 /*=========== RECENT WORK STYLING ========*/
 .recet-work {
@@ -172,14 +169,15 @@ nav ul li a {
   color: #ffffff;
 }
 
-.services-offered{
+.services-offered {
   display: flex;
   flex-wrap: wrap;
   gap: 3.5rem;
 }
 
-figure {
-
+.service {
+  width: 100%;
+  height: auto;
 }
 
 figcaption {
@@ -189,23 +187,16 @@ figcaption {
   color: #ffffff;
 }
 
-.studio,
-.company {
-
-}
-
 .recet-work a {
-display: block;
-text-align: center;
-margin: 2rem auto;
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
   color: #ee6c4d;
   border: 1px solid #ee6c4d;
   border-radius: 5px;
   text-decoration: none;
   padding: 12px 8px 12px 8px;
-
 }
-
 
 /* ======CLIENT REVIEWS STYLE ======= */
 .reviews {
@@ -214,7 +205,7 @@ margin: 2rem auto;
   flex-direction: column;
   align-items: center;
   padding: 20px 10px;
-  gap: 1.5rem
+  gap: 1.5rem;
 }
 
 .reviews h1 {
@@ -226,7 +217,7 @@ margin: 2rem auto;
   border-bottom: 3px solid #ee6c4d;
 }
 
-.client-comment{
+.client-comment {
   display: flex;
   padding: 2% 12%;
   gap: 3rem;
@@ -240,7 +231,7 @@ margin: 2rem auto;
   padding: 1vw;
 }
 
-.client{
+.client {
   display: flex;
   justify-content: flex-start;
   gap: 1rem;
@@ -252,7 +243,7 @@ margin: 2rem auto;
   background-color: #c4c4c4;
   border-radius: 50%;
 }
-.client-info{
+.client-info {
   display: block;
 }
 
@@ -265,7 +256,6 @@ margin: 2rem auto;
   color: #ffffff;
 }
 
-
 /* ========== CONTACT FORM STYLE =========  */
 .contact-us {
   background-color: #3d5a80;
@@ -273,6 +263,8 @@ margin: 2rem auto;
   flex-direction: column;
   justify-content: flex-start;
   padding: 2vw 9vw;
+  width: 100%;
+  height: auto;
 }
 
 .contact-us p {
@@ -282,27 +274,33 @@ margin: 2rem auto;
   color: #ffffff;
 }
 
-.contact-us input {
+.form-inputs{
+  flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
   background-color: #26384f;
   border-radius: 3px;
-  /* flex: 1; */
   border: none;
 }
 
 textarea {
-  border-radius: 3px;
-  background-color: #26384f;
   resize: vertical;
   box-sizing: border-box;
-  border: none;
   font-family: Open Sans;
   font-weight: 400;
   font-size: 16px;
+  width: 100%;
 }
 
 button {
   background-color: #ee6c4d;
   border-radius: 5px;
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
   text-align: center;
   font-family: Open Sans;
   font-weight: 400;
@@ -310,7 +308,6 @@ button {
   color: #ffffff;
   border: none;
 }
-
 
 /* ========= FOOTER STYLE ======== */
 .footer {
@@ -329,5 +326,4 @@ button {
 }
 
 .social-page {
-
 }
