@@ -106,13 +106,15 @@ nav ul li a {
 /* ========== ABOUT SECTION STYLE ==========*/
 .about-section {
   background-color: #293241;
-  padding: 40px 20px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding: 10vh 15vw;
+  gap: 5rem;
 }
 
 .about-image {
-  /* width: 20%; */
+  width: 100%;
   height: auto;
 }
 
@@ -130,6 +132,7 @@ nav ul li a {
 
 .about-section p {
   font-size: 18px;
+  margin-bottom: 1.2rem;
 }
 
 /* ======= COMPANIES STYLE ======== */
@@ -158,7 +161,7 @@ nav ul li a {
 /*=========== RECENT WORK STYLING ========*/
 .recet-work {
   background-color: #293241;
-  padding: 40px 125px;
+  padding: 5vh 10vw;
   gap: 10rem;
 }
 
@@ -204,7 +207,7 @@ figcaption {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 10px;
+  padding: 3vh 4vw;
   gap: 1.5rem;
 }
 
