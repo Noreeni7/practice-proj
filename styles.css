@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 /*========== NAV BAR STYLE ==========*/
 nav {
   background-color: #3d5a80;
@@ -79,12 +78,7 @@ nav ul li a {
   font-weight: 400;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
-  
 }
-
-/* .hero-subsection {
-  position: relative;
-} */
 
 .hero-image {
   width: 100%;
@@ -128,7 +122,16 @@ nav ul li a {
 
 .about-text {
   font-size: 28px;
-  border-bottom: 3px solid #ee6c4d;
+}
+
+.about-text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 36%;
+  background-color: #EE6C4D;
+  margin-top: 0.5rem;
 }
 
 .about-section p {
@@ -154,6 +157,18 @@ nav ul li a {
   font-family: "Open Sans", sans-serif;
 }
 
+.companies p::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8%;
+  background-color: #EE6C4D;
+  margin-top: 0.5rem;
+}
+
 .companies-logos {
   width: 100%;
   height: auto;
@@ -167,18 +182,29 @@ nav ul li a {
   height: auto;
 }
 
-.recet-work p {
+.work-title {
+  position: relative;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 28px;
   color: #ffffff;
   text-align: left;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+}
+
+.work-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 18%;
+  background-color: #EE6C4D;
+  margin-top: 0.5rem;
 }
 
 .services-offered {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
 }
 
@@ -221,8 +247,18 @@ figcaption {
   font-weight: 400;
   font-style: Regular;
   font-size: 28px;
-  border-bottom: 3px solid #ee6c4d;
-  padding-bottom: 1rem;
+}
+
+.reviews h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8%;
+  background-color: #EE6C4D;
+  margin-top: 0.5rem;
 }
 
 .client-comment {
@@ -280,7 +316,17 @@ figcaption {
   font-weight: 400;
   font-size: 28px;
   color: #ffffff;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+}
+
+.contact-us p::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 18%;
+  background-color: #EE6C4D;
+  margin-top: 0.5rem;
 }
 
 .form-inputs {
