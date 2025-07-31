@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-/*========== NAV BAAR STYLE ==========*/
+
+/*========== NAV BAR STYLE ==========*/
 nav {
   background-color: #3d5a80;
   height: 98px;
@@ -25,7 +26,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1rem;
   list-style: none;
 }
 
@@ -55,6 +56,8 @@ nav ul li a {
   justify-content: space-around;
   align-items: center;
   height: calc(100vh - 98px);
+  padding: 0 15vw;
+  gap: 4rem;
   background-color: #3d5a80;
 }
 
@@ -76,20 +79,18 @@ nav ul li a {
   font-weight: 400;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
+  
 }
 
-.hero-subsection {
+/* .hero-subsection {
   position: relative;
-}
+} */
 
 .hero-image {
-  bottom: 0;
   width: 100%;
   max-width: 315px;
   height: auto;
   transform: translateX(-10%);
-  z-index: 9999;
-  width: 100%;
   height: auto;
 }
 
@@ -142,7 +143,7 @@ nav ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 10px;
+  padding: 3rem 10rem;
   gap: 1.5rem;
 }
 
@@ -154,15 +155,16 @@ nav ul li a {
 }
 
 .companies-logos {
-  /* width: 100%; */
+  width: 100%;
   height: auto;
 }
 
 /*=========== RECENT WORK STYLING ========*/
 .recet-work {
   background-color: #293241;
-  padding: 5vh 10vw;
-  gap: 10rem;
+  padding: 3rem 10rem;
+  width: 100%;
+  height: auto;
 }
 
 .recet-work p {
@@ -170,12 +172,14 @@ nav ul li a {
   font-weight: 400;
   font-size: 28px;
   color: #ffffff;
+  text-align: left;
+  padding-bottom: 1rem;
 }
 
 .services-offered {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2.5rem;
 }
 
 .service {
@@ -190,7 +194,7 @@ figcaption {
   color: #ffffff;
 }
 
-.recet-work a {
+/* .recet-work a {
   display: block;
   text-align: center;
   margin: 2rem auto;
@@ -199,7 +203,7 @@ figcaption {
   border-radius: 5px;
   text-decoration: none;
   padding: 12px 8px 12px 8px;
-}
+} */
 
 /* ======CLIENT REVIEWS STYLE ======= */
 .reviews {
@@ -218,6 +222,7 @@ figcaption {
   font-style: Regular;
   font-size: 28px;
   border-bottom: 3px solid #ee6c4d;
+  padding-bottom: 1rem;
 }
 
 .client-comment {
@@ -275,6 +280,7 @@ figcaption {
   font-weight: 400;
   font-size: 28px;
   color: #ffffff;
+  padding-bottom: 1rem;
 }
 
 .form-inputs {
