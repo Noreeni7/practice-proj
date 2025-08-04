@@ -15,7 +15,7 @@ nav {
 }
 
 .logo {
-  font-size: 18px;
+  font-size : clamp(1.5rem3vw,1.75rem);
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -30,7 +30,7 @@ nav ul {
 }
 
 nav ul li {
-  font-size: 16px;
+  font-size : clamp(1.5rem3vw,1.75rem);
   font-weight: 400;
 }
 
@@ -52,22 +52,24 @@ nav ul li a {
 /*=========== HERO SECTION STYLE ========*/
 .hero {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   height: calc(100vh - 98px);
   padding: 0 15vw;
   gap: 4rem;
   background-color: #3d5a80;
 }
 
-.hero p {
+.hero-text{
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: white;
 }
 
 .hero-title {
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size : clamp(1.5rem,3vw,1.75rem);
 }
 
 .hero-title2 {
@@ -76,27 +78,38 @@ nav ul li a {
 
 .hero-description {
   font-weight: 400;
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
+  font-size : clamp(1.5rem,3vw,1.75rem);
+}
+
+.hero-subsection{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 0 1 80%;
+}
+
+.image-container{
+  position: relative;
+  width: 100%;
 }
 
 .hero-image {
   width: 100%;
-  max-width: 315px;
+  max-width: clamp(300px, 35vw, 500px);
   height: auto;
-  transform: translateX(-10%);
-  height: auto;
+  z-index: 2;
 }
 
-/* .circle {
+.circle {
   position: absolute;
   background-color: #2932415E;
   border-radius: 50%;
-  top: -2vw;
-  left: -2vw;
+  top: -1vw;
+  left: 2.5vw;
   width: 18vw;
   height: 18vw;
-} */
+  z-index: 0;
+}
 
 /* ========== ABOUT SECTION STYLE ==========*/
 .about-section {
@@ -121,7 +134,7 @@ nav ul li a {
 }
 
 .about-text {
-  font-size: 28px;
+  font-size : clamp(1.5rem3vw,1.75rem);
 }
 
 .about-text::after {
@@ -135,7 +148,7 @@ nav ul li a {
 }
 
 .about-section p {
-  font-size: 18px;
+  font-size : clamp(1.5rem3vw,1.75rem);
   margin-bottom: 1.2rem;
 }
 
@@ -152,7 +165,7 @@ nav ul li a {
 
 .companies p {
   color: #ffffff;
-  font-size: 28px;
+  font-size : clamp(1.5rem3vw,1.75rem);
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
 }
@@ -186,7 +199,7 @@ nav ul li a {
   position: relative;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 28px;
+  font-size : clamp(1.5rem3vw,1.75rem);
   color: #ffffff;
   text-align: left;
   padding-bottom: 2rem;
@@ -214,7 +227,7 @@ nav ul li a {
 }
 
 figcaption {
-  font-size: 18px;
+  font-size : clamp(1.5rem3vw,1.75rem);
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -246,7 +259,7 @@ figcaption {
   font-family: Open Sans;
   font-weight: 400;
   font-style: Regular;
-  font-size: 28px;
+  font-size : clamp(1.5rem3vw,1.75rem);
 }
 
 .reviews h1::after {
@@ -296,7 +309,7 @@ figcaption {
   font-family: Open Sans;
   font-weight: 400;
   font-style: Regular;
-  font-size: 16px;
+  font-size : clamp(1.5rem3vw,1.75rem);
   color: #ffffff;
 }
 
@@ -314,7 +327,7 @@ figcaption {
 .contact-us p {
   font-family: Open Sans;
   font-weight: 400;
-  font-size: 28px;
+  font-size : clamp(1.5rem3vw,1.75rem);
   color: #ffffff;
   padding-bottom: 2rem;
 }
@@ -354,7 +367,7 @@ textarea {
   box-sizing: border-box;
   font-family: Open Sans;
   font-weight: 400;
-  font-size: 16px;
+  font-size : clamp(1.5rem3vw,1.75rem);
   width: 100%;
   padding-bottom: 5rem;
   margin-top: 0.5rem;
@@ -366,7 +379,7 @@ textarea::placeholder {
   color: #ffffffb2;
   font-family: Open Sans;
   font-weight: 400;
-  font-size: 16px;
+  font-size : clamp(1.5rem3vw,1.75rem);
 }
 
 button {
@@ -379,7 +392,7 @@ button {
   text-align: center;
   font-family: Open Sans;
   font-weight: 400;
-  font-size: 16px;
+  font-size : clamp(1.5rem3vw,1.75rem);
   color: #ffffff;
   border: none;
 }
@@ -396,7 +409,7 @@ button {
 
 .footer p {
   font-weight: 700;
-  font-size: 18px;
+  font-size : clamp(1.5rem3vw,1.75rem);
   color: #ffffff;
 }
 
