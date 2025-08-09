@@ -177,7 +177,7 @@ nav ul li a {
   height: 3px;
   left: 50%;
   transform: translateX(-50%);
-  width: 8%;
+  width: 8vw;
   background-color: #EE6C4D;
   margin-top: 0.5rem;
 }
@@ -210,7 +210,7 @@ nav ul li a {
   position: absolute;
   display: block;
   height: 3px;
-  width: 18%;
+  width: 18vw;
   background-color: #EE6C4D;
   margin-top: 0.5rem;
 }
@@ -269,7 +269,7 @@ figcaption {
   height: 3px;
   left: 50%;
   transform: translateX(-50%);
-  width: 8%;
+  width: 8vw;
   background-color: #EE6C4D;
   margin-top: 0.5rem;
 }
@@ -337,7 +337,7 @@ figcaption {
   position: absolute;
   display: block;
   height: 3px;
-  width: 18%;
+  width: 18vw;
   background-color: #EE6C4D;
   margin-top: 0.5rem;
 }
