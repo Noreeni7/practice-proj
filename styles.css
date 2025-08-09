@@ -141,8 +141,8 @@ nav ul li a {
   content: "";
   position: absolute;
   display: block;
-  height: 3px;
-  width: 36%;
+  height: 0.2rem;
+  width: 36vw;
   background-color: #EE6C4D;
   margin-top: 0.5rem;
 }
