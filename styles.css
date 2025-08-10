@@ -245,6 +245,14 @@ figcaption {
 } */
 
 /* ======CLIENT REVIEWS STYLE ======= */
+.arrow-left{
+  cursor: pointer;
+}
+
+.arrow-right{
+
+}
+
 .reviews {
   background-color: #2f3746;
   display: flex;
@@ -275,10 +283,18 @@ figcaption {
 }
 
 .client-comment {
+  overflow-x: scroll;
   display: flex;
   padding: 2% 12%;
   gap: 3rem;
+  overflow: hidden;
 }
+
+.client-comment > div {
+   flex: 0 0 50%;      /*each review takes half width */
+  /* box-sizing: border-box; */
+}
+
 
 .Charles,
 .marg {
