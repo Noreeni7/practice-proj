@@ -246,7 +246,7 @@ figcaption {
 
 /* ======CLIENT REVIEWS STYLE ======= */
 .arrow-left{
-  cursor: pointer;
+  
 }
 
 .arrow-right{
@@ -283,21 +283,21 @@ figcaption {
 }
 
 .client-comment {
-  overflow-x: scroll;
+  /* overflow-x: hidden; */
   display: flex;
   padding: 2% 12%;
   gap: 3rem;
-  overflow: hidden;
 }
 
 .client-comment > div {
    flex: 0 0 50%;      /*each review takes half width */
-  /* box-sizing: border-box; */
+  /* box-sizing: border-box; */;
 }
 
 
 .Charles,
-.marg {
+.marg,
+.dav {
   background-color: #00000073;
   border-radius: 3px;
   opacity: 1;
@@ -316,12 +316,14 @@ figcaption {
   background-color: #c4c4c4;
   border-radius: 50%;
 }
+
 .client-info {
   display: block;
 }
 
 .Charles p,
-.marg p {
+.marg p,
+.dav p {
   font-family: Open Sans;
   font-weight: 400;
   font-style: Regular;
