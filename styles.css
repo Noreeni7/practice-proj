@@ -245,15 +245,28 @@ figcaption {
 } */
 
 /* ======CLIENT REVIEWS STYLE ======= */
+
+
+.client-comment-wrapper{
+  overflow: hidden;
+}
+
 .arrow-left{
-  
+  all: unset;
+  position: absolute;
+  top: 50%;
+  left: 8rem;
 }
 
 .arrow-right{
-
+  all: unset;
+  position: absolute;
+  top: 50%;
+  left: 90vw;
 }
 
 .reviews {
+  position: relative;
   background-color: #2f3746;
   display: flex;
   flex-direction: column;
@@ -285,15 +298,15 @@ figcaption {
 .client-comment {
   overflow-x: hidden;
   display: flex;
-  padding: 2% 12%;
+  align-items: center;
+  padding: 1rem 8rem;
   gap: 3rem;
 }
 
 .client-comment > div {
-   flex: 0 0 50%;      /*each review takes half width */
-  /* box-sizing: border-box; */;
+  flex: 0 0 calc(50% - 1.5rem);      
+  box-sizing: border-box;
 }
-
 
 .Charles,
 .marg,
