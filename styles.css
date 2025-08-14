@@ -249,6 +249,7 @@ figcaption {
 
 .client-comment-wrapper{
   overflow: hidden;
+  padding: 1rem 8rem;
 }
 
 .arrow-left{
@@ -262,7 +263,7 @@ figcaption {
   all: unset;
   position: absolute;
   top: 50%;
-  left: 90vw;
+  right: 8rem;
 }
 
 .reviews {
@@ -299,7 +300,6 @@ figcaption {
   overflow-x: hidden;
   display: flex;
   align-items: center;
-  padding: 1rem 8rem;
   gap: 3rem;
 }
 
