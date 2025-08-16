@@ -106,7 +106,7 @@
     <div class="reviews-container">
       <div class="reviews">
         <h1>What my clients say</h1>
-        <button class="arrow-left">
+        <button class="scroll-left">
           <svg
             width="24"
             height="24"
@@ -184,7 +184,7 @@
             </div>
           </div>
         </div>
-        <button class="arrow-right">
+        <button class="scroll-right">
           <svg
             width="24"
             height="24"
@@ -240,8 +240,8 @@
     <!-- ====== JS ======= -->
     <script>
       const reviews = document.querySelector(".client-comment");
-      const leftBtn = document.querySelector(".arrow-left");
-      const rightBtn = document.querySelector(".arrow-right");
+      const leftBtn = document.querySelector(".scroll-left");
+      const rightBtn = document.querySelector(".scroll-right");
       leftBtn.addEventListener("click", function () {
         reviews.scrollBy({ left: -300, behavior: "smooth" });
       });

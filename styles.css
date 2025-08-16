@@ -252,14 +252,14 @@ figcaption {
   padding: 1rem 8rem;
 }
 
-.arrow-left{
+.scroll-left{
   all: unset;
   position: absolute;
   top: 50%;
   left: 8rem;
 }
 
-.arrow-right{
+.scroll-right{
   all: unset;
   position: absolute;
   top: 50%;
