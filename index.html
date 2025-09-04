@@ -14,13 +14,14 @@
     <!-- =========== NAVIGATION BAR ========== -->
     <nav>
       <h1 class="logo">IWMYWF</h1>
-      <ul>
+      <ul id="primary-menu" class="menu">
         <li><a href="Home">Home</a></li>
         <li><a href="About Me">About Me</a></li>
         <li><a href="Works">Works</a></li>
         <li><a href="Blog">Blog</a></li>
         <li><a href="Get in Touch" class="boxed">Get in Touch</a></li>
       </ul>
+      <button class="menu-toggle">☰</button>
     </nav>
 
     <!-- ============== HERO SECTION =============== -->
@@ -238,6 +239,8 @@
     <!-- ======= END OF FOOTER SECTION ====== -->
 
     <!-- ====== JS ======= -->
+    
+    <script src="script.js"></script>
     <script>
       const reviews = document.querySelector(".client-comment");
       const leftBtn = document.querySelector(".scroll-left");

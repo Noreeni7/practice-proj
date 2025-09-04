@@ -6,19 +6,42 @@
 
 /*========== NAV BAR STYLE ==========*/
 nav {
-  background-color: #3d5a80;
-  height: 98px;
+  background-color: #041731;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
+  position: relative;
 }
 
 .logo {
-  font-size : clamp(1.5rem3vw,1.75rem);
+  font-size : clamp(1.5rem, 3vw, 1.75rem);
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.menu.open{
+  display: block;
+  right: 0;
+}
+
+body.menu-open,
+html.menu-open {
+  overflow: hidden;
 }
 
 nav ul {
@@ -41,7 +64,7 @@ nav ul li a {
 }
 
 .boxed {
-  background-color: #ee6c4d;
+  background-color: #aa4f38;
   padding: 15px 40px;
   border-radius: 5px;
   display: flex;
@@ -53,7 +76,7 @@ nav ul li a {
 .hero {
   display: flex;
   align-items: stretch;
-  height: calc(100vh - 98px);
+  height: calc(100vh - 80px);
   padding: 0 15vw;
   gap: 4rem;
   background-color: #3d5a80;
@@ -446,3 +469,48 @@ button {
 
 .social-page {
 }
+
+@media (max-width: 768px){
+  .menu-toggle{
+    display: block;
+  }
+
+  .menu{
+    display: none;
+    background-color: #071933;
+    top: 50px;
+    position: fixed;
+    z-index: 1000;
+    width: 76%;
+    height: calc(100vh - 50px);
+    justify-content: center;
+  }
+
+  .image-container{
+    display: none;
+  }
+
+  .about-image{
+    display: none;
+  }
+
+  .copyright{
+    display: none;
+  }
+
+  nav{
+    height: 50px;
+  }
+
+  nav ul li{
+    margin: 2rem;
+  }
+
+  .hero{
+    height: calc(100vh - 50px);
+  }
+
+  
+
+}
+
