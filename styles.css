@@ -510,7 +510,14 @@ button {
     height: calc(100vh - 50px);
   }
 
-  
+  .client-comment > div {
+    min-width: 100%;
+  }  
+
+  .client-comment > div {
+  max-width: 60px;
+  max-height: 240px;
+}
 
 }
 
