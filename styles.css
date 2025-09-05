@@ -27,7 +27,7 @@ nav {
   align-items: center;
 }
 
-.menu-toggle {
+.menu-icon {
   display: none;
   background: none;
   cursor: pointer;
@@ -471,17 +471,17 @@ button {
 }
 
 @media (max-width: 768px){
-  .menu-toggle{
+  .menu-icon{
     display: block;
   }
 
   .menu{
     display: none;
-    background-color: #071933;
+    background-color: #0a2447;
     top: 50px;
     position: fixed;
     z-index: 1000;
-    width: 76%;
+    width: 73%;
     height: calc(100vh - 50px);
     justify-content: center;
   }
